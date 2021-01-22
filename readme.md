@@ -11,3 +11,19 @@ in the comments of `index.js`.
 
 Either way, that error message really threw me off and I feel stupid
 for not realizing what was happening earlier.
+
+Pretty much every property from the `newVoiceState.channel` was defined,
+except for anything related to sharding. Perhaps the information was
+cached, but caching shard information is disabled due to how much it varies?
+
+I honestly don't have a clue.
+
+I'll leave this error here so if it ever pops up in someone's
+search results on google, they can figure out what's wrong.
+
+```
+TypeError: Cannot read property 'send' of undefined
+    at VoiceConnection.sendVoiceStateUpdate (/<trimmed>/node_modules/discord.js/src/client/voice/VoiceConnection.js:193:37)
+    at VoiceConnection.authenticate (/<trimmed>/node_modules/discord.js/src/client/voice/VoiceConnection.js:323:10)
+    at /<trimmed>/node_modules/discord.js/src/client/voice/ClientVoiceManager.js:88:20
+```

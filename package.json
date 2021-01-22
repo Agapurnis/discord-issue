@@ -1,21 +1,14 @@
 {
-  "name": "waffle",
+  "name": "discord_bot_issue",
   "version": "0.0.1",
-  "description": "Discord bot.",
+  "description": "It has an issue.",
   "main": "src/index.js",
   "dependencies": {
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0"
   },
-  "devDependencies": {
-    "@types/redis": "^2.8.28",
-    "@typescript-eslint/eslint-plugin": "^4.14.0",
-    "@typescript-eslint/parser": "^4.14.0",
-    "eslint": "^7.18.0",
-    "eslint-plugin-unicorn": "^26.0.1"
-  },
   "scripts": {
-    "start": "node -r dotenv/config -r ts-node/register src/index"
+    "start": "node -r dotenv/config src/index"
   },
   "author": "",
   "license": "ISC"
